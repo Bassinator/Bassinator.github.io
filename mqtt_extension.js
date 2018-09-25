@@ -3,14 +3,14 @@
 
 new (function() {
 
-  $.getScript("https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js", function( data, textStatus, jqxhr ) {
+  $.getScript("mqttws31.js", function( data, textStatus, jqxhr ) {
   console.log( data ); // Data returned
   console.log( textStatus ); // Success
   console.log( jqxhr.status ); // 200
   console.log( "Load was performed." );
   MQTTconnect();
   });
-  $.getScript("https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js", function(){});
+  $.getScript("jquery.min.js", function(){});
 
   var mqtt;
   var reconnectTimeout = 2000;
