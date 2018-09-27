@@ -3,7 +3,7 @@
 
 new (function() {
 
-  $.getScript("mqttws31.js", function( data, textStatus, jqxhr ) {
+  $.getScript("file://mqttws31.js", function( data, textStatus, jqxhr ) {
   console.log( data ); // Data returned
   console.log( textStatus ); // Success
   console.log( jqxhr.status ); // 200
