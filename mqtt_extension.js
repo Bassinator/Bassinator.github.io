@@ -10,7 +10,7 @@ new (function() {
   console.log( "Load was performed." );
   MQTTconnect();
   });
-  $.getScript("jquery.min.js", function(){});
+  $.getScript("file://jquery.min.js", function(){});
 
   var mqtt;
   var reconnectTimeout = 2000;
